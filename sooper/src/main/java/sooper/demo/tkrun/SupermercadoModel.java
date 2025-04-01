@@ -22,13 +22,13 @@ public class SupermercadoModel {
 		
 	}
 
-	public void embolsaArticulo() {
+	public void embolsarArticulo (int idArticulo) {
 		
-		List<Object[]> lista = null;
+		String sql = "UPDATE articuloPedido SET embolsado = 1 WHERE idArticulo = ?";
 		
-		lista = new ArrayList<Object[]>();
+		db.executeUpdate(sql, idArticulo);
 		
-		lista = db.executeQueryArray("SELECT * FROM ARTICULOPEDIDO WHERE IDPEDIDO = ?", 1);
+		return;
 	}
 	
 }
