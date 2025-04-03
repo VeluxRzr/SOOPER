@@ -130,4 +130,11 @@ public JTable getTable() {
 	// TODO Auto-generated method stub
 	return this.table;
 }
+public JTable getTable() {
+	
+	return this.tablaEmbolsados;
+}
+}
+
+
 }

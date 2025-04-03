@@ -68,7 +68,7 @@ public class SwingMain {
 				
 				controller.setVistaModel(vista, modelo);
 				
-				}
+			}
 		}
 		);
 		frame.getContentPane().add(btnNewButton, BorderLayout.CENTER);
